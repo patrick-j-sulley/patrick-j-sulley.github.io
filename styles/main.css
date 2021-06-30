@@ -25,7 +25,7 @@ body{
 	  to { background-position: 0 100vh; }
   }
 
-  /* #avatar img {
+  #avatar img {
     display: block;
     position: relative;
     border-radius: 10px; 
@@ -34,6 +34,6 @@ body{
     margin-bottom: 50px;
     margin-left: auto;
     border: 2px white solid;
-  } */
+  }
 
  
