@@ -10,3 +10,30 @@ body{
     height: 100%;
     width: 100%;
   }
+
+  #background {
+    background-image: url(../images/animated-bg.png);
+    background-size: 50vh auto;
+	  background-position: 0px 0px;
+	  background-repeat: repeat;
+    animation: bg-animated 30s linear infinite;
+  }
+    
+
+  @keyframes bg-animated {
+	  from { background-position: 0 0; }
+	  to { background-position: 0 100vh; }
+  }
+
+  /* #avatar img {
+    display: block;
+    position: relative;
+    border-radius: 10px; 
+    margin-top: 50px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+    border: 2px white solid;
+  } */
+
+ 
