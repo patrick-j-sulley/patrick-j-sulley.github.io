@@ -11,6 +11,11 @@ body{
     width: 100%;
   }
 
+  .center-list {
+    justify-content: center;
+    display: flex;
+  }
+
   #background {
     background-image: url(../images/animated-bg.png);
     background-size: 50vh auto;
