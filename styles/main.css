@@ -60,5 +60,16 @@ html, body{
     margin-bottom: 25px;
   }
 
+  .row{
+    max-height: 97%
+  }
+/* Padding top & bottom for Row sizing, work on later */
+  /* @mixin make-col-ready($gutter: $grid-gutter-width) {
+
+    padding-top: calc(var(--#{$variable-prefix}gutter-x) * .5); // stylelint-disable-line function-disallowed-list
+    padding-bottom: calc(var(--#{$variable-prefix}gutter-x) * .5); // stylelint-disable-line function-disallowed-list
+  } */
+  
+
 
  
