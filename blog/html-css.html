@@ -1,0 +1,107 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <title>Relative, Absolute, & Fixed Positioning</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="background">
+    <div class="container-fluid center">
+        <div class="row">
+            <div class="col-xs-12 offset-xs-4 mx-auto">
+                <div class="h-100 p-5 text-white bg-dark rounded-3 border rounded-3">
+                    <a href="../index.html" class="btn btn-dark  border rounded-2 justify-content-start" role="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-arrow-left-square" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                        </svg>
+                    </a>
+                    <div class="title text-center">
+                        <h1 class="text-white">Relative, Absolute, & Fixed Positioning</h1>
+                        <h5 class="text-white">02/07/2021</h5>
+                    </div>
+
+
+                    <div id="post">
+                        <p id="post-text">Positioning in HTML refers to the visually located placement of an element
+                            within a web page via the defining positioning method that
+                            has been specified. In non-technical terms, imagine a website that has a red square on it,
+                            the position of that red square could be in the center of the page,
+                            it could be at the top left, or the bottom right. The location of the image on the page is
+                            dependent on what definition has been used to position it there.
+                            By default, web elements will have a static position, which implies that it is rendered and
+                            placed in the order that it is located within the HTML
+                            (i.e. If the red square is after a title, and before a paragraph, that's where it will be
+                            located by default)
+                            There are three other definitions that I would like to look in to and explain here.
+                            Relative, Absolute, and Fixed.
+                        </p>
+                        <h2 class="text-center">Relative</h2>
+                        <p id="post-text">Relative positioning, as stated in the name, defines the item as being
+                            positioned relative to its default position within the page.
+                            In the example we saw above, the staticly positioned red square existed at the very top left
+                            corner of the page. This is because it is the very first item that item
+                            that has been detected within the HTML to be displayed. If the position definition were to
+                            be changed to Relative, this allows us to add further definitions
+                            to move the red square around, with the default location now being a center point. The
+                            example below shows a relative definiton of 10 pixels to the left, and 100 pixels
+                            from the top of the default location.
+                        </p>
+                        <div id="avatar">
+                            <img src="../images/html-css-relative.JPG">
+                        </div>
+                        <h2 class="text-center">Absolute</h2>
+                        <p id="post-text">Absolute positioning, defines the item as being positioned in direct
+                            comparison to the nearest ancestor element with either relative or absolute positioning.
+                            In laymen's terms, if the red square exists within in a window that has been positioned
+                            relative to its default location,
+                            using the absolute position definition will locate it around that window as a center point.
+                            This is because the window, based on its defition, is the nearest
+                            ancestor element that has been detected on the page that matches this criteria. The example
+                            here, shows that the red square
+                            has detected the nearest non static acestor element as being a container that contains other
+                            elements within it, so by using the same
+                            10 pixel left and 100 pixel top definition from before, it positions it based on that
+                            containers definitions.
+                        </p>
+                        <div id="avatar">
+                            <img src="../images/html-css-absolute.JPG">
+                        </div>
+                        <h2 class="text-center">Fixed</h2>
+                        <p id="post-text">Fixed positioning, defines the item as being positioned in a fixed area inside
+                            the browser window. Unlike the previous two definitions, the
+                            fixed definition doesn't rely on any other elements within the HTML to decide its location,
+                            it refers to whatever the starting point of the web browser is for its center point. An easy
+                            way to wrap your head around this, would be to imagine that you're looking at an artwork,
+                            and
+                            you want to know what it looks like with a sticker without ruining it, so you place the
+                            sticker
+                            on the glass case that the artwork exists within. The example that we see here, shows the
+                            red square with the same
+                            definitions as before, only this time, the position stays the exact same no matter how big
+                            the browser window is.
+                        </p>
+                        <div id="avatar">
+                            <img src="../images/html-css-fixed.JPG">
+                        </div>
+                        <p style="text-align: center;">All pictures in this blog post were taken from the W3Schools demo on the CSS
+                            position property, which you can check out <a
+                            href="https://www.w3schools.com/cssref/playit.asp?filename=playcss_position&preval=static" target="_blank">here.</a></p> 
+                        
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- JavaScript Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
