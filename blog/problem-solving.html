@@ -1,0 +1,224 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <title>Problem Solving</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="background">
+    <div class="container-fluid center">
+        <div class="row">
+            <div class="col-xs-12 offset-xs-4 mx-auto">
+                <div class="h-100 p-5 text-white bg-dark rounded-3 border rounded-3">
+                    <a href="../index.html" class="btn btn-dark  border rounded-2 justify-content-start" role="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-arrow-left-square" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                        </svg>
+                    </a>
+                    <div class="title text-center">
+                        <h1 class="text-white">Problem Solving</h1>
+                        <h5 class="text-white">18/07/2021</h5>
+                    </div>
+
+
+                    <div id="post">
+                        <h2 class="text-center">Blocked on a simple problem</h2>
+                        <h3 class="text-center">Scenario</h3>
+                        <div id="avatar">
+                            <img src="../images/problem-solving-basic-problem1.JPG">
+                        </div>
+                        <div id="avatar">
+                            <img src="../images/problem-solving-basic-problem2.JPG">
+                        </div>
+                        <p id="post-text">
+                            In this scenario, I was required to write code that passed a set of pre-configured tests
+                            that checked to see if correct values were being passed through my functions (JS Kata -
+                            Gradebook for my fellow students). In laymens terms, this would be like if I needed my car
+                            to pass a warrent of fitness and each part of the car was tested. The test in this
+                            particular scenario that I was stuck on, required me to add a score to a student
+                            gradebook under the name of 'Susan', with a score of 80. However, I got stuck on this,
+                            as despite calling to the function and passing through the correct values,
+                            I was not passing the test.
+
+                        </p>
+                        <h3 class="text-center">Techniques used</h3>
+                        <p id="post-text">
+                            I did a bit of googling to make sure that I wrote up the call to the function correctly,
+                            which I had indeed done right. I tried swapping the function around in my
+                            code to see if it was an issue of sequencing, that hadn't changed my outcome. I read through
+                            the error messages multiple times, but was confused as I was certain that
+                            I had done it correctly. I had also attempted to console log (In laymens terms, console
+                            logging is like writing down your working process for a math question on a test) the
+                            gradebook itself to check
+                            the values of it before and after the addScore function was called, and found that the value
+                            was being added, despite the fact that I still wasn't passing the test. It wasn't until I
+                            read further down the code, in the area where all the tests had been configured, where I
+                            discovered that
+                            this call to the function had already been written out before hand. The test itself checked
+                            to see if the gradebook had an exact number of entries, and because this function had been
+                            called to twice, the gradebook had received more than 1 entry. After removing the call to
+                            the function that I put in myself, the test passed as expected.
+                        </p>
+                        <div id="avatar">
+                            <img src="../images/problem-solving-basic-problem3.JPG">
+                        </div>
+                        <div id="avatar">
+                            <img src="../images/problem-solving-basic-problem4.JPG">
+                        </div>
+                        <h3 class="text-center">Feelings throughout the process</h3>
+                        <p id="post-text">
+                            I felt mostly confused throughout the process, as I was absolutely certain that I had
+                            written what was required. I was even more stumped when the usual problem solving techniques
+                            that I had found reliable within my prior coding experience hadn't lead me to a solution.
+                        </p>
+                        <h3 class="text-center">What i learnt</h3>
+                        <p id="post-text">
+                            The most important takeaway that I had obtained from this experience, was that it is
+                            important to read through all of the code you are working with beforehand, especially if the
+                            code that you are working with was written by somebody else. A simple oversight on my part,
+                            of not checking all of the code, had lead to a half hour stumble of confusion, that I could
+                            have easily avoided had I taken the short time before I started working to read through what
+                            I was assigned to work on.
+                        </p>
+                        <h2 class="text-center">Solving a problem elegantly</h2>
+                        <h3 class="text-center">Scenario</h3>
+                        <div id="avatar">
+                            <img src="../images/problem-solving-elegant-problem1.JPG">
+                        </div>
+                        <div id="avatar">
+                            <img src="../images/problem-solving-elegant-problem2.JPG">
+                        </div>
+                        <p id="post-text">
+                            Another scenario from the JS Kata section (Super FizzBuzz, this time). This time, we were
+                            required to set up 2 functions, 'FizzBuzz' and 'Super FizzBuzz'. The FizzBuzz function takes
+                            a number and either returns the number, or, a result if it is a multiple of a specified
+                            number. If the number is a multiple of
+                            3, it returns the word 'Fizz', if a multiple of 5, it returns the word 'Buzz', and if a
+                            multiple of 15, it returns the word 'FizzBuzz'. An anology to help understand this, could be
+                            that of a raffle, where you want every ticket number that is a multiple of 3 to be for a
+                            minor prize, 5 for a medium, and 15 for a large.
+                        </p>
+                        <p id="post-text">
+                            The Super_FizzBuzz function here, is to return the same results, however, rather than taking
+                            in singular numbers, it takes in a array of numbers and checks for the value of each one in
+                            the array before returning either the number or a result based on what it is a multiple of.
+                            So, compared to the previous raffle scenario, this time, we're calculating multiple tickets
+                            at a time. The problem that I needed to resolve here, was to work out how to automate this
+                            process, as the testing required the Super_FizzBuzz function to work on arrays of any size.
+                        </p>
+                        <h3 class="text-center">Techniques used</h3>
+                        <p id="post-text">
+                            Initially, I tried to copy and paste the functionality of the original fizz buzz and
+                            replicate the checks but with an arrays values, which didn't end up working, as the code
+                            within the original function just checks singular numbers without breaking them down in the
+                            array. I then typed in some Pseudocode to better get an idea of the sequencing that I would
+                            need to implement in order to achieve this, to which, I worked out that the right approach
+                            would be to check for how many numbers were in the array, and for each number, pass it
+                            through to the original FizzBuzz function and collect each returned number to be put into an
+                            array that is then returned from the Super_FizzBuzz function. My next technique was to do
+                            some googling around, which lead me to some StackOverflow pages that had similiar examples
+                            to what I was trying to achieve, which I could then work off of and implement in my example
+                            here.
+                        </p>
+                        <div id="avatar">
+                            <img src="../images/problem-solving-elegant-problem3.JPG">
+                        </div>
+                        <div id="avatar">
+                            <img src="../images/problem-solving-elegant-problem4.JPG">
+                        </div>
+                        <h3 class="text-center">Feelings throughout the process</h3>
+                        <p id="post-text">
+                            I felt very cool, calm, and collected throughout the process of working out this issue, as I
+                            was able to find a sensical sequential workflow to forge a pathway to success that was time
+                            effecient.
+                        </p>
+                        <h3 class="text-center">What i learnt</h3>
+                        <p id="post-text">
+                            My main takeaway from this instance of problem solving, was that planning out what you are
+                            trying to achieve with your code, before googling, is a great way of reducing the time load
+                            required to find the information that you are seeking. Had I not structured what I was
+                            trying to achieve with Pseudocode, it's likely that I could have spent a lot more time
+                            researching.
+                        </p>
+                        <h2 class="text-center">Problem solving techniques & process</h2>
+                        <h3 class="text-center">Pseudocode</h3>
+                        <p id="post-text">
+                            I found pseudocode very helpful in particular with the Super_FizzBuzz scenario described
+                            above. It's very similiar to brainstorming on a piece of paper before researching for a
+                            report, as it essentially structures the goals and objectives that you are wanting to
+                            achieve with a piece of code that you are wanting to write out.
+                        </p>
+                        <h3 class="text-center">Trying something</h3>
+                        <p id="post-text">
+                            This is almost always my first approach when it comes to problem solving, as it allows me to
+                            test the current level of knowledge that I have and to see if I know the solution right off
+                            the bat. It's important to not spend too much time just trying for the sake of trying, as it
+                            can be easy to go on pure auto pilot without trying other methods as well.
+                        </p>
+                        <h3 class="text-center">Rubber ducky method</h3>
+                        <p id="post-text">
+                            I find that the rubber ducky method has potential in certain circumstances where you are
+                            facing a complicated scenario and you yourself are having issues with understanding it.
+                            Similiar to Pseudocode, it allows you to lay out what you are wanting to achieve, by
+                            breaking everything down metaphorically and making comparisons to different scenarios and
+                            circumstances.
+                        </p>
+                        <h3 class="text-center">Reading error messages</h3>
+                        <p id="post-text">
+                            Varies from message to message based on the complexity of what is being read back to the
+                            developer. Usually, if I don't understand what has been given back to me on the first
+                            attempt, I will immediately google it afterwards.
+                        </p>
+                        <h3 class="text-center">Console.logging</h3>
+                        <p id="post-text">
+                            A very helpful asset to have as a developer that I have used many times to break down each
+                            step in my code and to identify if certain values are being passed or assigned. One of my
+                            most used tools whenever I encounter problems throughout my code for sure.
+                        </p>
+                        <h3 class="text-center">Googling</h3>
+                        <p id="post-text">
+                            I would make the argument that being a developer is mostly knowing how to use google. By far
+                            my most used technique whenevr I encounter coding problems. If you are able to combine this
+                            with other methods in order to break down and refine your search query, then you can filter
+                            through your search results to the most relevant and useful ones availible.
+                        </p>
+                        <h3 class="text-center">Asking your peers for help</h3>
+                        <p id="post-text">
+                            A crucial requirement as a developer, is being able to communicate and work within a team
+                            based environment. This includes not just the ability to collaberate, but also, the ability
+                            to ask for assistance when needed. In my prior experience, working within a development team
+                            in a work based environment, it was encouraged that I, as a junior developer, get assistance
+                            from the senior developer as soon as I needed it. A development team is very much a machine,
+                            and if one of those cogs slows down, it can slow down the entire process.
+                        </p>
+                        <h3 class="text-center">Asking coaches for help</h3>
+                        <p id="post-text">
+                            For similiar reasons above, asking for help from coaches is very important as well. Coaches
+                            are there to help, and are always very approachable and willing to help.
+                        </p>
+                        <h3 class="text-center">Improving your process with reflection</h3>
+                        <p id="post-text">
+                            Reflecting via taking notes has been a very underrated part of my development experience.
+                            This is due to the fact that we as humans can not remember everything purely within our
+                            minds, as we are forgetful creatures. This is why I have always ensured to take down notes
+                            of whatever I have been doing, as there have been times where I have reffered back to notes
+                            taken years way back, as a way for me to recall my thought process from past experiences as
+                            a way to help myself in the present.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- JavaScript Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
