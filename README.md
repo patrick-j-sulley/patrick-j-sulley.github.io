@@ -1,6 +1,6 @@
 # About patrick-john-sullivan.github.io (My EDA foundations blog)
 
-https://patrick-j-sulley.github.io/patrick-john-sullivan.github.io/
+https://patrick-j-sulley.github.io/
 
 Welcome to my EDA foundations blog, where I have documented my 5 week journey through the foundations stage of the web development bootcamp at Enspiral Dev Academy.
 
